@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center"
+    android:padding="5dp">
+<TextView
+    android:background="#ADA5A5"
+    android:textColor="#111"
+    android:gravity="center"
+    android:text="wangsen_1"
+    android:textSize="30dp"
+    android:id="@+id/ls_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"/>
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowMenuStyle">@style/toolbarStyle</item>
+    </style>
+
+    <style name="toolbarStyle" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <!--是否覆盖错点，默认为true，即盖住Toolbar-->
+        <item name="overlapAnchor">false</item>
+        <!--弹出层的背景颜色-->
+        <item name="android:popupBackground">#bc07bee7</item>
+        <!--弹出层垂直方向上的偏移，负值会覆盖Toolbar-->
+        <item name="android:dropDownVerticalOffset">4dp</item>
+        <!--弹出层水平方向上的偏移，即距离屏幕左边的距离，负值会导致右边出现空隙-->
+        <item name="android:dropDownHorizontalOffset">0.5dp</item>
+        <!--文字的颜色-->
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="popup">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+
+</resources>

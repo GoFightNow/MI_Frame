@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/edit"
+            android:icon="@drawable/exit"
+            android:orderInCategory="10"
+            android:title="Exit"
+            app:showAsAction="never"/>
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/btn_l_upload"
+        android:orderInCategory="9"
+        android:title="Share"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/setting"
+        android:orderInCategory="8"
+        android:title="Setting"
+        app:showAsAction="never"/>
+</menu>

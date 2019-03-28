@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <wangsen.sxcz.viewpager_test.caidan.PagerEnabledSlidingPaneLayout
+        android:id="@+id/slidingpane"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/caidan"></include>
+
+        <include layout="@layout/content"></include>
+    </wangsen.sxcz.viewpager_test.caidan.PagerEnabledSlidingPaneLayout>
+</LinearLayout>

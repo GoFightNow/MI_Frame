@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/btn_l_windows" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="470dp"
+        android:layout_height="50dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:autoSizeMinTextSize="15dp"
+        android:autoSizeTextType="uniform"
+        android:autoSizeStepGranularity="1dp"
+        android:gravity="center_vertical"
+        android:text="我是一条测试的文本"
+        android:textSize="30dp"/>
+
+</LinearLayout>

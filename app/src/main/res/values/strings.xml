@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MI框架</string>
+    <string name="welcome">欢迎</string>
+    <string name="list_title01">ViewPager控件</string>
+    <string name="list_title02">Expandable控件</string>
+    <string name="list_title03">小萌</string>
+    <string name="list_title04">更改二维码信息</string>
+    <string name="list_title05">RecyclerView控件</string>
+</resources>

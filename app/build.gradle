@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "wangsen.sxcz.viewpager_test"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+/**
+ * 这段代码表示遍历layout下的文件夹,表示都可以作为分文件夹用.
+ */
+//    def listSubFile = {
+//        def resFolder = 'src/main/res/layout'
+//        def files = file(resFolder).listFiles()
+//        def folders = []
+//        files.each {
+//            item -> folders.add(item.absolutePath)
+//        }
+//        folders.add(file(resFolder).parentFile.absolutePath)
+//        return folders
+//    }
+//
+//    sourceSets {
+//        main {
+//            res.srcDirs = listSubFile()
+//        }
+//    }
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res',
+                           'src/main/res/layout/caidan',
+                           'src/main/res/layout/xialaliebiao',
+                           'src/main/res/layout/test_view',
+                           'src/main/res/layout/sharbutton',
+                           'src/main/res/drawable/explain',
+                           'src/main/res/drawable/caidan',
+                           'src/main/res/drawable/toolbar',
+                           'src/main/res/drawable/test_fragment',
+                           'src/main/res/drawable/sharbutton',
+                           'src/main/res/drawable/expandable',
+                           'src/main/res/layout/settingbutton',
+                           'src/main/res/drawable/settingbutton',
+                           'src/main/res/layout/xiaomeng', 'src/main/res/layout/recycler']
+        }
+    }
+    buildToolsVersion '28.0.3'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation files('libs/MPAndroidChart-v2.1.5.jar')
+    implementation files('libs/AutoScalingLayout1.3.aar')
+    implementation files('libs/eventbus-3.0.0.jar')
+    implementation files('libs/ormlite-android-5.1.jar')
+    implementation files('libs/ormlite-core-5.1.jar')
+    implementation files('libs/zxing-3.2.1.jar')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+}
